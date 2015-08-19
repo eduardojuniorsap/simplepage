@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Cloud Services - Interview</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="I823925 - Eduardo Junior">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+		<div class="container">
+			<div class="col-md-4">
+
+				<nav id="menu">
+					<ul class="parent-menu">
+						<li>
+							<a href="#">Customer</a> 
+							<ul>
+								<li><a href="#/newCustomer">New</a></li>
+								<li><a href="#/listCustomer">List</a></li>
+							</ul> 
+						</li> 
+						<li>
+							<a href="#">Purchase Order</a>
+							<ul>
+								<li><a href="#newPurchaseOrder">New</a></li>
+								<li><a href="#listPurchaseOrder">List</a></li>
+								<li><a href="#">Requisition</a></li>
+							</ul>
+						</li>
+					</ul>
+				 </nav>
+
+			</div>
+	
+			<div class="col-md-8">
+				<div class="row" ng-view="">
+
+				</div>
+			</div>
+
+		</div>
+	
+	    <script src="https://code.angularjs.org/1.4.4/angular.min.js"></script>
+	    <script src="https://code.angularjs.org/1.4.4/angular-route.min.js"></script>
+    
+	    <script src="app.js"></script>
+
+    </body>
+</html>
